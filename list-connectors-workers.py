@@ -3,7 +3,8 @@ import json
 
 """Script que vc seta qual o worker-id que você quer encontrar todos os connectors que estão rodando nele.
    Estou partindo do principio que você esta rodando o cluster k8s rodando na porta 8083 fique atendo das descrições 
-   do connector do seu cluster
+   do connector do seu cluster. Isso facilita a identificar baseado em metricas de GC da JVM, qual é o connector que esta
+   sendo o ofensor do cluster.
 """
 
 # Configuração da URL da API do Kafka Connect
